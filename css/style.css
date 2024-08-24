@@ -1,0 +1,308 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#cornerName {
+    width: 150px;
+}
+
+#landingImage {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #333;
+}
+
+.nameDesignation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#name {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Section Containers */
+.infoTables {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.tabHeading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Flexbox Layouts */
+.experience-content,
+.education-content,
+.leadership-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.experience-item,
+.education-item,
+.leadership-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+/* Logo Styling */
+.compLogo img,
+.eduLogo img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 8px;
+}
+
+.compLogo,
+.eduLogo {
+    flex: 0 0 80px;
+}
+
+/* Content Styling */
+.experience-details,
+.eduDetails,
+.leadership-details {
+    flex: 1;
+}
+
+.role,
+.degree,
+.schoolName,
+.organization {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.abtComp,
+.location {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.workDuration,
+.duration {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* List Styles */
+ul {
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Additional Styles */
+.pfp {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Leadership Experience Section */
+.leadership-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.leadership-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.leadership-details {
+    flex: 1;
+}
+
+.leadership-item .role {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.leadership-item .schoolName {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.leadership-item .workDuration {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+/* Skills Section */
+.skills-content {
+    padding-left: 20px;
+}
+
+.skills-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Projects Section */
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.project-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.projectName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.projectDetails {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Certifications Section */
+/* .certifications-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.certification-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.certificationName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.certificationDetails {
+    font-size: 14px;
+    color: #555;
+} */
+
+/* Achievements Section */
+.achievements-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.achievement-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.achievementName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.achievementDetails {
+    font-size: 14px;
+    color: #555;
+}
+/* Certifications Section */
+.certifications-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.certification-item {
+    flex: 1 1 calc(50% - 25px); /* Adjust to fit two items in one row with a gap */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+/* Ensure images and content adjust properly */
+.certificationHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.certLogo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.certificationName {
+    font-size: 18px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.dropdownBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.certificationDetails {
+    padding-top: 15px;
+}
+
+.certificationDetails img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Media Query for Vertical View (Mobile or Narrow Screens) */
+@media (max-width: 768px) {
+    .certification-item {
+        flex: 1 1 100%; /* Take full width on narrow screens */
+    }
+}
