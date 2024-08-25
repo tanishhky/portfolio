@@ -10,6 +10,10 @@
     font-family: Bodoni;
     src: url(../assets/fonts/BodoniModaSC-VariableFont_opsz\,wght.ttf);
 }
+@font-face {
+    font-family: Bitter;
+    src: url(../assets/fonts/Bitter-Regular.ttf);
+}
 
 a{
     text-decoration: none;
@@ -17,7 +21,7 @@ a{
 }
 /* General Styles */
 body {
-    font-family: OpenSans, sans-serif;
+    font-family: Bitter, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -167,12 +171,6 @@ body {
     flex: 0 0 80px;
 }
 
-.compName,
-.schoolName,
-.role{
-    font-size: 1.6em;
-}
-
 /* Content Styling */
 .experience-details,
 .eduDetails,
@@ -181,12 +179,18 @@ body {
 }
 
 .role,
-.degree,
-.schoolName,
-.organization {
+.degree{
     /* font-size: 18px; */
     font-weight: bold;
     margin-bottom: 8px;
+}
+
+.compName,
+.EschoolName,
+.role,
+.projectName{
+    font-size: 1.8em;
+    font-family: Bitter;
 }
 
 .abtComp,
@@ -242,7 +246,7 @@ li {
     flex: 1;
 }
 
-.leadership-item .role {
+.leadership-item .Erole {
     /* font-size: 18px; */
     font-weight: bold;
     margin-bottom: 8px;
@@ -259,15 +263,52 @@ li {
     color: #888;
     margin-bottom: 10px;
 }
-/* Skills Section */
-.skills-content {
-    padding-left: 20px;
+
+
+.skills-graphical-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
 }
 
-.skills-content ul {
-    list-style-type: disc;
-    padding-left: 20px;
+.skill-category {
+    flex: 1;
+    /* font-size: 1.5em; */
+    min-width: 200px;
 }
+
+h4{
+    font-size: 1.5em;
+}
+
+.skill-category {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.skill-bubble {
+    display: inline-block;
+    background-color: #7dd8ec;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: transform 0.2s ease;
+}
+
+.skill-bubble:hover {
+    transform: scale(1.1);
+}
+
+.tabHeading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff; Adjust color based on your design
+    text-align: center;
+}
+
 
 /* Projects Section */
 .projects-content {
@@ -285,7 +326,7 @@ li {
 }
 
 .projectName {
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: bold;
     margin-bottom: 8px;
 }
@@ -438,4 +479,23 @@ li {
 .social-links img {
     width: 50px; /* Adjust the size as needed */
     height: 50px;
+}
+
+.experience-item,
+.education-item,
+.leadership-item {
+    display: flex;
+    align-items: center; /* Ensures that items inside are aligned vertically */
+}
+
+.compLogo {
+    display: flex;
+    align-items: center; /* Centers the logo vertically */
+    justify-content: center; /* Optional: centers the logo horizontally */
+    padding-right: 20px; /* Add space between logo and details */
+}
+
+.compImg {
+    max-width: 100px; /* Adjust the size of the logo */
+    height: auto;
 }
