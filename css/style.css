@@ -89,20 +89,22 @@ body {
 
 /* Section Containers */
 .infoTables {
-    background: #fff;
-    padding: 20px;
-    margin: 20px;
+    color: #fff;
+    background: #111111;
+    padding: 40px;
+    margin: 10%;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* Headings */
 .tabHeading {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-    color: #333;
+    color: #ffffff;
+    font-family: Bodoni;
 }
 
 /* Flexbox Layouts */
@@ -112,6 +114,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    box-shadow: rgba(255,255,255,0.5);
 }
 
 .experience-item,
@@ -121,9 +124,11 @@ body {
     flex-direction: row;
     gap: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 8px;
-    background-color: #fafafa;
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 0 0 10px rgb(255, 255, 255);;
 }
 
 /* Logo Styling */
@@ -132,6 +137,7 @@ body {
     max-width: 80px;
     max-height: 80px;
     border-radius: 8px;
+    background-color: #fff;
 }
 
 .compLogo,
@@ -199,7 +205,8 @@ li {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #fafafa;
+    background-color: #000000;
+    color: #fff;
 }
 
 .leadership-details {
@@ -238,6 +245,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    color: #000;
 }
 
 .project-item {
@@ -300,7 +308,9 @@ li {
 .achievementName {
     font-size: 18px;
     font-weight: bold;
+    /* font-family: Bodoni; */
     margin-bottom: 8px;
+    color: #000000;
 }
 
 .achievementDetails {
@@ -332,7 +342,7 @@ li {
 }
 
 .certLogo {
-    width: 40px;
+    /* width: 40px; */
     height: 40px;
     margin-right: 10px;
 }
@@ -341,6 +351,7 @@ li {
     font-size: 18px;
     font-weight: bold;
     flex-grow: 1;
+    color: #000000;
 }
 
 .dropdownBtn {
