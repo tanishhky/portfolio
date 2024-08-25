@@ -11,6 +11,10 @@
     src: url(../assets/fonts/BodoniModaSC-VariableFont_opsz\,wght.ttf);
 }
 
+a{
+    text-decoration: none;
+    color: inherit
+}
 /* General Styles */
 body {
     font-family: OpenSans, sans-serif;
@@ -85,6 +89,7 @@ body {
     font-weight: bold;
     font-family: NewYork;
     color: #fff;
+    text-shadow: 20px 20px 20px 20px rgba(0, 0, 0,1);
 }
 
 /* Section Containers */
@@ -103,9 +108,24 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-    color: #ffffff;
+    color: #FFE740;
+    text-shadow: 10px 10px 10px 10px rgba(#ffe640d2,);
     font-family: Bodoni;
 }
+/* .tabHeading {
+    font-size: 2.5em;
+    color: #ffd700; 
+    text-align: center; 
+    font-weight: bold;
+    text-shadow: 
+        0 0 5px #ffd700,
+        0 0 10px #ffd700, 
+        0 0 20px #ffb800,
+        0 0 30px #ff8c00,
+        0 0 40px #ff8c00, 
+        0 0 50px #ff8c00;
+} */
+
 
 /* Flexbox Layouts */
 .experience-content,
@@ -128,14 +148,15 @@ body {
     border-radius: 8px;
     background-color: #000000;
     color: #fff;
-    box-shadow: 0 0 10px rgb(255, 255, 255);;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* Logo Styling */
 .compLogo img,
 .eduLogo img {
-    max-width: 80px;
-    max-height: 80px;
+    vertical-align: middle;
+    max-width: 160px;
+    max-height: 160px;
     border-radius: 8px;
     background-color: #fff;
 }
@@ -143,6 +164,12 @@ body {
 .compLogo,
 .eduLogo {
     flex: 0 0 80px;
+}
+
+.compName,
+.schoolName,
+.role{
+    font-size: 1.6em;
 }
 
 /* Content Styling */
@@ -156,7 +183,7 @@ body {
 .degree,
 .schoolName,
 .organization {
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: bold;
     margin-bottom: 8px;
 }
@@ -214,7 +241,7 @@ li {
 }
 
 .leadership-item .role {
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: bold;
     margin-bottom: 8px;
 }
@@ -376,4 +403,37 @@ li {
     .certification-item {
         flex: 1 1 100%; /* Take full width on narrow screens */
     }
+}
+
+.connect-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7f7f7; /* Change this to match your website's design */
+    margin-top: 40px;
+}
+
+.connect-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333; /* Change this to match your website's design */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.social-links img {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
 }
