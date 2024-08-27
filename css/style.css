@@ -101,7 +101,7 @@ body {
     color: #fff;
     background: #111111;
     padding: 40px;
-    margin: 10%;
+    margin: 4% 10%;
     border-radius: 8px;
     box-shadow: 0 0 10px rgb(255, 255, 255);
 }
@@ -305,8 +305,8 @@ h4{
 .tabHeading {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #ffffff; Adjust color based on your design
-    text-align: center;
+    color: #ffffff;
+    text-align: centre;
 }
 
 
